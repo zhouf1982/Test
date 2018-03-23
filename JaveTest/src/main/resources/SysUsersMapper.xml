@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper nameSpace="com.javetest.mybatis.mapper.SysUsersMapper">
+    <select id="getSysUserByid" resultType="com.javetest.mybatis.bean.SysUsers">
+        select * from sys_users where id = ?
+    </select>
+</mapper>
