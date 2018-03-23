@@ -1,7 +1,7 @@
-package com.javetest.mybatis.sqlsession;
+package com.javetest.mybatis.core.sqlsession;
 
-import com.javetest.mybatis.config.Function;
-import com.javetest.mybatis.config.MapperBean;
+import com.javetest.mybatis.core.config.Function;
+import com.javetest.mybatis.core.config.MapperBean;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

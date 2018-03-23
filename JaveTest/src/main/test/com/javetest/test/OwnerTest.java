@@ -2,7 +2,7 @@ package com.javetest.test;
 
 import com.javetest.mybatis.bean.SysUsers;
 import com.javetest.mybatis.mapper.SysUsersMapper;
-import com.javetest.mybatis.sqlsession.MySqlSession;
+import com.javetest.mybatis.core.sqlsession.MySqlSession;
 import org.junit.Test;
 
 public class OwnerTest {

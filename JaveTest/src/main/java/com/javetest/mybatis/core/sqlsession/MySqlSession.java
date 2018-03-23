@@ -1,4 +1,4 @@
-package com.javetest.mybatis.sqlsession;
+package com.javetest.mybatis.core.sqlsession;
 
 import java.lang.reflect.Proxy;
 

@@ -1,4 +1,4 @@
-package com.javetest.mybatis.sqlsession;
+package com.javetest.mybatis.core.sqlsession;
 
 import com.javetest.mybatis.bean.SysUsers;
 

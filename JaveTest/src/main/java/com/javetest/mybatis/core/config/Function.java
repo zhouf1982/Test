@@ -1,4 +1,4 @@
-package com.javetest.mybatis.config;
+package com.javetest.mybatis.core.config;
 
 public class Function {
     private String sqltype;
