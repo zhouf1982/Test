@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<database>
-    <property name="driverClassName">org.postgresql.Driver</property>
-    <property name="url">jdbc:postgresql://127.0.0.1:5432/mytest2017</property>
-    <property name="username">postgres</property>
-    <property name="password">zhoufeng</property>
-</database>
