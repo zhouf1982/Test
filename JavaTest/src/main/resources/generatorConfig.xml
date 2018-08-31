@@ -45,11 +45,11 @@
                schema="sys"
                -->
 <!--   mr_templet_index    MR_FILE_INDEX    EMR_FILE_CONTENT_CDA   -->
-        <table tableName="t_test"
-               domainObjectName="TTest"
+        <table tableName="yf_typk"
+               domainObjectName="YfTypk"
                selectByPrimaryKeyQueryId="true"
         >
-            <generatedKey column="id" sqlStatement="Postgresql" identity="true" />
+            <!--<generatedKey column="id" sqlStatement="Postgresql" identity="true" />-->
             <!--<generatedKey column="templet_id" sqlStatement="Oracle" identity="true" />-->
             <!--
             <ignoreColumn column="" />

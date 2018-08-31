@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatis.mapper.YfKcmxMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatis.entity.YfKcmx" >
+    <id column="sbxh" property="sbxh" jdbcType="NUMERIC" />
+    <id column="jgid" property="jgid" jdbcType="NUMERIC" />
+    <result column="yfsb" property="yfsb" jdbcType="NUMERIC" />
+    <result column="ckbh" property="ckbh" jdbcType="NUMERIC" />
+    <result column="ypxh" property="ypxh" jdbcType="NUMERIC" />
+    <result column="ypcd" property="ypcd" jdbcType="NUMERIC" />
+    <result column="ypph" property="ypph" jdbcType="VARCHAR" />
+    <result column="ypxq" property="ypxq" jdbcType="TIMESTAMP" />
+    <result column="ypsl" property="ypsl" jdbcType="NUMERIC" />
+    <result column="jybz" property="jybz" jdbcType="NUMERIC" />
+    <result column="lsjg" property="lsjg" jdbcType="NUMERIC" />
+    <result column="pfjg" property="pfjg" jdbcType="NUMERIC" />
+    <result column="jhjg" property="jhjg" jdbcType="NUMERIC" />
+    <result column="lsje" property="lsje" jdbcType="NUMERIC" />
+    <result column="pfje" property="pfje" jdbcType="NUMERIC" />
+    <result column="jhje" property="jhje" jdbcType="NUMERIC" />
+    <result column="ykjh" property="ykjh" jdbcType="NUMERIC" />
+    <result column="yklj" property="yklj" jdbcType="NUMERIC" />
+    <result column="ykjj" property="ykjj" jdbcType="NUMERIC" />
+    <result column="ykpj" property="ykpj" jdbcType="NUMERIC" />
+    <result column="ywsj" property="ywsj" jdbcType="TIMESTAMP" />
+    <result column="ywlx" property="ywlx" jdbcType="NUMERIC" />
+    <result column="ykkcsb" property="ykkcsb" jdbcType="NUMERIC" />
+    <result column="kcly" property="kcly" jdbcType="NUMERIC" />
+    <result column="jyyy" property="jyyy" jdbcType="NUMERIC" />
+    <result column="state" property="state" jdbcType="NUMERIC" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map" >
+    delete from yf_kcmx
+    where sbxh = #{sbxh,jdbcType=NUMERIC}
+      and jgid = #{jgid,jdbcType=NUMERIC}
+  </delete>
+  <insert id="insert" parameterType="com.mybatis.entity.YfKcmx" >
+    insert into yf_kcmx (sbxh, jgid, yfsb, 
+      ckbh, ypxh, ypcd, ypph, 
+      ypxq, ypsl, jybz, 
+      lsjg, pfjg, jhjg, lsje, 
+      pfje, jhje, ykjh, yklj, 
+      ykjj, ykpj, ywsj, 
+      ywlx, ykkcsb, kcly, 
+      jyyy, state)
+    values (#{sbxh,jdbcType=NUMERIC}, #{jgid,jdbcType=NUMERIC}, #{yfsb,jdbcType=NUMERIC}, 
+      #{ckbh,jdbcType=NUMERIC}, #{ypxh,jdbcType=NUMERIC}, #{ypcd,jdbcType=NUMERIC}, #{ypph,jdbcType=VARCHAR}, 
+      #{ypxq,jdbcType=TIMESTAMP}, #{ypsl,jdbcType=NUMERIC}, #{jybz,jdbcType=NUMERIC}, 
+      #{lsjg,jdbcType=NUMERIC}, #{pfjg,jdbcType=NUMERIC}, #{jhjg,jdbcType=NUMERIC}, #{lsje,jdbcType=NUMERIC}, 
+      #{pfje,jdbcType=NUMERIC}, #{jhje,jdbcType=NUMERIC}, #{ykjh,jdbcType=NUMERIC}, #{yklj,jdbcType=NUMERIC}, 
+      #{ykjj,jdbcType=NUMERIC}, #{ykpj,jdbcType=NUMERIC}, #{ywsj,jdbcType=TIMESTAMP}, 
+      #{ywlx,jdbcType=NUMERIC}, #{ykkcsb,jdbcType=NUMERIC}, #{kcly,jdbcType=NUMERIC}, 
+      #{jyyy,jdbcType=NUMERIC}, #{state,jdbcType=NUMERIC})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mybatis.entity.YfKcmx" >
+    update yf_kcmx
+    set yfsb = #{yfsb,jdbcType=NUMERIC},
+      ckbh = #{ckbh,jdbcType=NUMERIC},
+      ypxh = #{ypxh,jdbcType=NUMERIC},
+      ypcd = #{ypcd,jdbcType=NUMERIC},
+      ypph = #{ypph,jdbcType=VARCHAR},
+      ypxq = #{ypxq,jdbcType=TIMESTAMP},
+      ypsl = #{ypsl,jdbcType=NUMERIC},
+      jybz = #{jybz,jdbcType=NUMERIC},
+      lsjg = #{lsjg,jdbcType=NUMERIC},
+      pfjg = #{pfjg,jdbcType=NUMERIC},
+      jhjg = #{jhjg,jdbcType=NUMERIC},
+      lsje = #{lsje,jdbcType=NUMERIC},
+      pfje = #{pfje,jdbcType=NUMERIC},
+      jhje = #{jhje,jdbcType=NUMERIC},
+      ykjh = #{ykjh,jdbcType=NUMERIC},
+      yklj = #{yklj,jdbcType=NUMERIC},
+      ykjj = #{ykjj,jdbcType=NUMERIC},
+      ykpj = #{ykpj,jdbcType=NUMERIC},
+      ywsj = #{ywsj,jdbcType=TIMESTAMP},
+      ywlx = #{ywlx,jdbcType=NUMERIC},
+      ykkcsb = #{ykkcsb,jdbcType=NUMERIC},
+      kcly = #{kcly,jdbcType=NUMERIC},
+      jyyy = #{jyyy,jdbcType=NUMERIC},
+      state = #{state,jdbcType=NUMERIC}
+    where sbxh = #{sbxh,jdbcType=NUMERIC}
+      and jgid = #{jgid,jdbcType=NUMERIC}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
+    select 'true' as QUERYID,sbxh, jgid, yfsb, ckbh, ypxh, ypcd, ypph, ypxq, ypsl, jybz, 
+    lsjg, pfjg, jhjg, lsje, pfje, jhje, ykjh, yklj, ykjj, ykpj, ywsj, ywlx, ykkcsb, kcly, 
+    jyyy, state
+    from yf_kcmx
+    where sbxh = #{sbxh,jdbcType=NUMERIC}
+      and jgid = #{jgid,jdbcType=NUMERIC}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select sbxh, jgid, yfsb, ckbh, ypxh, ypcd, ypph, ypxq, ypsl, jybz, lsjg, pfjg, jhjg, 
+    lsje, pfje, jhje, ykjh, yklj, ykjj, ykpj, ywsj, ywlx, ykkcsb, kcly, jyyy, state
+    from yf_kcmx
+  </select>
+</mapper>

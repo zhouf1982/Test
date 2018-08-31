@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatis.mapper.MsZffpMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatis.entity.MsZffp" >
+    <id column="mzxh" property="mzxh" jdbcType="NUMERIC" />
+    <id column="jgid" property="jgid" jdbcType="NUMERIC" />
+    <result column="fphm" property="fphm" jdbcType="VARCHAR" />
+    <result column="czgh" property="czgh" jdbcType="VARCHAR" />
+    <result column="jzrq" property="jzrq" jdbcType="TIMESTAMP" />
+    <result column="mzlb" property="mzlb" jdbcType="NUMERIC" />
+    <result column="hzrq" property="hzrq" jdbcType="TIMESTAMP" />
+    <result column="zfrq" property="zfrq" jdbcType="TIMESTAMP" />
+    <result column="zfyy" property="zfyy" jdbcType="VARCHAR" />
+    <result column="jzlsh" property="jzlsh" jdbcType="NUMERIC" />
+    <result column="ddbh" property="ddbh" jdbcType="VARCHAR" />
+    <result column="ddtksj" property="ddtksj" jdbcType="TIMESTAMP" />
+    <result column="ref_traceno" property="refTraceno" jdbcType="VARCHAR" />
+    <result column="t_ref_ordno" property="tRefOrdno" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="NUMERIC" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map" >
+    delete from ms_zffp
+    where mzxh = #{mzxh,jdbcType=NUMERIC}
+      and jgid = #{jgid,jdbcType=NUMERIC}
+  </delete>
+  <insert id="insert" parameterType="com.mybatis.entity.MsZffp" >
+    insert into ms_zffp (mzxh, jgid, fphm, 
+      czgh, jzrq, mzlb, 
+      hzrq, zfrq, zfyy, 
+      jzlsh, ddbh, ddtksj, 
+      ref_traceno, t_ref_ordno, state
+      )
+    values (#{mzxh,jdbcType=NUMERIC}, #{jgid,jdbcType=NUMERIC}, #{fphm,jdbcType=VARCHAR}, 
+      #{czgh,jdbcType=VARCHAR}, #{jzrq,jdbcType=TIMESTAMP}, #{mzlb,jdbcType=NUMERIC}, 
+      #{hzrq,jdbcType=TIMESTAMP}, #{zfrq,jdbcType=TIMESTAMP}, #{zfyy,jdbcType=VARCHAR}, 
+      #{jzlsh,jdbcType=NUMERIC}, #{ddbh,jdbcType=VARCHAR}, #{ddtksj,jdbcType=TIMESTAMP}, 
+      #{refTraceno,jdbcType=VARCHAR}, #{tRefOrdno,jdbcType=VARCHAR}, #{state,jdbcType=NUMERIC}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mybatis.entity.MsZffp" >
+    update ms_zffp
+    set fphm = #{fphm,jdbcType=VARCHAR},
+      czgh = #{czgh,jdbcType=VARCHAR},
+      jzrq = #{jzrq,jdbcType=TIMESTAMP},
+      mzlb = #{mzlb,jdbcType=NUMERIC},
+      hzrq = #{hzrq,jdbcType=TIMESTAMP},
+      zfrq = #{zfrq,jdbcType=TIMESTAMP},
+      zfyy = #{zfyy,jdbcType=VARCHAR},
+      jzlsh = #{jzlsh,jdbcType=NUMERIC},
+      ddbh = #{ddbh,jdbcType=VARCHAR},
+      ddtksj = #{ddtksj,jdbcType=TIMESTAMP},
+      ref_traceno = #{refTraceno,jdbcType=VARCHAR},
+      t_ref_ordno = #{tRefOrdno,jdbcType=VARCHAR},
+      state = #{state,jdbcType=NUMERIC}
+    where mzxh = #{mzxh,jdbcType=NUMERIC}
+      and jgid = #{jgid,jdbcType=NUMERIC}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="map" >
+    select 'true' as QUERYID,mzxh, jgid, fphm, czgh, jzrq, mzlb, hzrq, zfrq, zfyy, jzlsh, 
+    ddbh, ddtksj, ref_traceno, t_ref_ordno, state
+    from ms_zffp
+    where mzxh = #{mzxh,jdbcType=NUMERIC}
+      and jgid = #{jgid,jdbcType=NUMERIC}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select mzxh, jgid, fphm, czgh, jzrq, mzlb, hzrq, zfrq, zfyy, jzlsh, ddbh, ddtksj, 
+    ref_traceno, t_ref_ordno, state
+    from ms_zffp
+  </select>
+</mapper>

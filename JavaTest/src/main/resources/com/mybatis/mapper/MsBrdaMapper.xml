@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatis.mapper.MsBrdaMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatis.entity.MsBrda" >
+    <id column="brid" property="brid" jdbcType="NUMERIC" />
+    <result column="mzhm" property="mzhm" jdbcType="VARCHAR" />
+    <result column="brxm" property="brxm" jdbcType="VARCHAR" />
+    <result column="fyzh" property="fyzh" jdbcType="VARCHAR" />
+    <result column="sfzh" property="sfzh" jdbcType="VARCHAR" />
+    <result column="brxz" property="brxz" jdbcType="NUMERIC" />
+    <result column="brxb" property="brxb" jdbcType="NUMERIC" />
+    <result column="csny" property="csny" jdbcType="TIMESTAMP" />
+    <result column="hyzk" property="hyzk" jdbcType="NUMERIC" />
+    <result column="zydm" property="zydm" jdbcType="NUMERIC" />
+    <result column="mzdm" property="mzdm" jdbcType="NUMERIC" />
+    <result column="xxdm" property="xxdm" jdbcType="NUMERIC" />
+    <result column="gmyw" property="gmyw" jdbcType="NUMERIC" />
+    <result column="dwxh" property="dwxh" jdbcType="NUMERIC" />
+    <result column="dwmc" property="dwmc" jdbcType="VARCHAR" />
+    <result column="dwdh" property="dwdh" jdbcType="VARCHAR" />
+    <result column="dwyb" property="dwyb" jdbcType="VARCHAR" />
+    <result column="hkdz" property="hkdz" jdbcType="VARCHAR" />
+    <result column="jtdh" property="jtdh" jdbcType="VARCHAR" />
+    <result column="hkyb" property="hkyb" jdbcType="VARCHAR" />
+    <result column="jzcs" property="jzcs" jdbcType="NUMERIC" />
+    <result column="jzrq" property="jzrq" jdbcType="TIMESTAMP" />
+    <result column="czrq" property="czrq" jdbcType="TIMESTAMP" />
+    <result column="jzkh" property="jzkh" jdbcType="VARCHAR" />
+    <result column="sfdm" property="sfdm" jdbcType="NUMERIC" />
+    <result column="jgdm" property="jgdm" jdbcType="NUMERIC" />
+    <result column="gjdm" property="gjdm" jdbcType="NUMERIC" />
+    <result column="lxrm" property="lxrm" jdbcType="VARCHAR" />
+    <result column="lxgx" property="lxgx" jdbcType="NUMERIC" />
+    <result column="lxdz" property="lxdz" jdbcType="VARCHAR" />
+    <result column="lxdh" property="lxdh" jdbcType="VARCHAR" />
+    <result column="dbrm" property="dbrm" jdbcType="VARCHAR" />
+    <result column="dbgx" property="dbgx" jdbcType="NUMERIC" />
+    <result column="sbhm" property="sbhm" jdbcType="VARCHAR" />
+    <result column="ybkh" property="ybkh" jdbcType="VARCHAR" />
+    <result column="zztx" property="zztx" jdbcType="NUMERIC" />
+    <result column="jdjg" property="jdjg" jdbcType="NUMERIC" />
+    <result column="jdsj" property="jdsj" jdbcType="TIMESTAMP" />
+    <result column="jdr" property="jdr" jdbcType="VARCHAR" />
+    <result column="zxbz" property="zxbz" jdbcType="NUMERIC" />
+    <result column="zxr" property="zxr" jdbcType="VARCHAR" />
+    <result column="zxsj" property="zxsj" jdbcType="TIMESTAMP" />
+    <result column="xgsj" property="xgsj" jdbcType="TIMESTAMP" />
+    <result column="csd_sqs" property="csdSqs" jdbcType="NUMERIC" />
+    <result column="csd_s" property="csdS" jdbcType="NUMERIC" />
+    <result column="csd_x" property="csdX" jdbcType="NUMERIC" />
+    <result column="jgdm_sqs" property="jgdmSqs" jdbcType="NUMERIC" />
+    <result column="jgdm_s" property="jgdmS" jdbcType="NUMERIC" />
+    <result column="xzz_sqs" property="xzzSqs" jdbcType="NUMERIC" />
+    <result column="xzz_s" property="xzzS" jdbcType="NUMERIC" />
+    <result column="xzz_x" property="xzzX" jdbcType="NUMERIC" />
+    <result column="xzz_yb" property="xzzYb" jdbcType="VARCHAR" />
+    <result column="xzz_dh" property="xzzDh" jdbcType="VARCHAR" />
+    <result column="hkdz_sqs" property="hkdzSqs" jdbcType="NUMERIC" />
+    <result column="hkdz_s" property="hkdzS" jdbcType="NUMERIC" />
+    <result column="hkdz_x" property="hkdzX" jdbcType="NUMERIC" />
+    <result column="xzz_qtdz" property="xzzQtdz" jdbcType="VARCHAR" />
+    <result column="hkdz_qtdz" property="hkdzQtdz" jdbcType="VARCHAR" />
+    <result column="zjlx" property="zjlx" jdbcType="NUMERIC" />
+    <result column="zjhm" property="zjhm" jdbcType="VARCHAR" />
+    <result column="jhrm" property="jhrm" jdbcType="VARCHAR" />
+    <result column="jhdh" property="jhdh" jdbcType="VARCHAR" />
+    <result column="jhdz" property="jhdz" jdbcType="VARCHAR" />
+    <result column="brsg" property="brsg" jdbcType="NUMERIC" />
+    <result column="brtz" property="brtz" jdbcType="NUMERIC" />
+    <result column="bslzt" property="bslzt" jdbcType="NUMERIC" />
+    <result column="gsscd" property="gsscd" jdbcType="NUMERIC" />
+    <result column="ssscd" property="ssscd" jdbcType="NUMERIC" />
+    <result column="mpiid" property="mpiid" jdbcType="VARCHAR" />
+    <result column="glzh" property="glzh" jdbcType="NUMERIC" />
+    <result column="zfbid" property="zfbid" jdbcType="VARCHAR" />
+    <result column="zfbsfqy" property="zfbsfqy" jdbcType="NUMERIC" />
+    <result column="state" property="state" jdbcType="NUMERIC" />
+    <result column="bxh" property="bxh" jdbcType="VARCHAR" />
+    <result column="lxzh" property="lxzh" jdbcType="VARCHAR" />
+    <result column="kzhm" property="kzhm" jdbcType="VARCHAR" />
+    <result column="jsdh" property="jsdh" jdbcType="NUMERIC" />
+    <result column="yl" property="yl" jdbcType="NUMERIC" />
+    <result column="rl" property="rl" jdbcType="NUMERIC" />
+    <result column="bxlxmc" property="bxlxmc" jdbcType="VARCHAR" />
+    <result column="xzqydm" property="xzqydm" jdbcType="VARCHAR" />
+    <result column="tjid" property="tjid" jdbcType="NUMERIC" />
+    <result column="ttdm" property="ttdm" jdbcType="VARCHAR" />
+    <result column="lwh" property="lwh" jdbcType="NUMERIC" />
+    <result column="xj" property="xj" jdbcType="VARCHAR" />
+    <result column="jt" property="jt" jdbcType="VARCHAR" />
+    <result column="mp" property="mp" jdbcType="VARCHAR" />
+    <result column="bzkxx" property="bzkxx" jdbcType="VARCHAR" />
+    <result column="bzksbm" property="bzksbm" jdbcType="VARCHAR" />
+    <result column="bzkkh" property="bzkkh" jdbcType="VARCHAR" />
+    <result column="cbdxzqydm" property="cbdxzqydm" jdbcType="VARCHAR" />
+    <result column="pydm" property="pydm" jdbcType="VARCHAR" />
+    <result column="mhbs" property="mhbs" jdbcType="NUMERIC" />
+    <result column="smkh" property="smkh" jdbcType="VARCHAR" />
+    <result column="jrz" property="jrz" jdbcType="VARCHAR" />
+    <result column="zyhm" property="zyhm" jdbcType="VARCHAR" />
+    <result column="rylx" property="rylx" jdbcType="NUMERIC" />
+    <result column="kplx" property="kplx" jdbcType="NUMERIC" />
+    <result column="cyrybz" property="cyrybz" jdbcType="NUMERIC" />
+    <result column="dqbm" property="dqbm" jdbcType="VARCHAR" />
+    <result column="rylb" property="rylb" jdbcType="VARCHAR" />
+    <result column="tsbbm" property="tsbbm" jdbcType="VARCHAR" />
+    <result column="icmw" property="icmw" jdbcType="VARCHAR" />
+    <result column="fjrylb" property="fjrylb" jdbcType="VARCHAR" />
+    <result column="sj" property="sj" jdbcType="VARCHAR" />
+    <result column="brbz" property="brbz" jdbcType="VARCHAR" />
+    <result column="ltbr" property="ltbr" jdbcType="NUMERIC" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
+    delete from ms_brda
+    where brid = #{brid,jdbcType=NUMERIC}
+  </delete>
+  <insert id="insert" parameterType="com.mybatis.entity.MsBrda" >
+    insert into ms_brda (brid, mzhm, brxm, 
+      fyzh, sfzh, brxz, brxb, 
+      csny, hyzk, zydm, 
+      mzdm, xxdm, gmyw, dwxh, 
+      dwmc, dwdh, dwyb, hkdz, 
+      jtdh, hkyb, jzcs, jzrq, 
+      czrq, jzkh, sfdm, 
+      jgdm, gjdm, lxrm, lxgx, 
+      lxdz, lxdh, dbrm, dbgx, 
+      sbhm, ybkh, zztx, jdjg, 
+      jdsj, jdr, zxbz, 
+      zxr, zxsj, xgsj, 
+      csd_sqs, csd_s, csd_x, 
+      jgdm_sqs, jgdm_s, xzz_sqs, 
+      xzz_s, xzz_x, xzz_yb, 
+      xzz_dh, hkdz_sqs, hkdz_s, 
+      hkdz_x, xzz_qtdz, hkdz_qtdz, 
+      zjlx, zjhm, jhrm, jhdh, 
+      jhdz, brsg, brtz, bslzt, 
+      gsscd, ssscd, mpiid, 
+      glzh, zfbid, zfbsfqy, 
+      state, bxh, lxzh, kzhm, 
+      jsdh, yl, rl, bxlxmc, 
+      xzqydm, tjid, ttdm, 
+      lwh, xj, jt, mp, 
+      bzkxx, bzksbm, bzkkh, 
+      cbdxzqydm, pydm, mhbs, 
+      smkh, jrz, zyhm, rylx, 
+      kplx, cyrybz, dqbm, 
+      rylb, tsbbm, icmw, 
+      fjrylb, sj, brbz, ltbr
+      )
+    values (#{brid,jdbcType=NUMERIC}, #{mzhm,jdbcType=VARCHAR}, #{brxm,jdbcType=VARCHAR}, 
+      #{fyzh,jdbcType=VARCHAR}, #{sfzh,jdbcType=VARCHAR}, #{brxz,jdbcType=NUMERIC}, #{brxb,jdbcType=NUMERIC}, 
+      #{csny,jdbcType=TIMESTAMP}, #{hyzk,jdbcType=NUMERIC}, #{zydm,jdbcType=NUMERIC}, 
+      #{mzdm,jdbcType=NUMERIC}, #{xxdm,jdbcType=NUMERIC}, #{gmyw,jdbcType=NUMERIC}, #{dwxh,jdbcType=NUMERIC}, 
+      #{dwmc,jdbcType=VARCHAR}, #{dwdh,jdbcType=VARCHAR}, #{dwyb,jdbcType=VARCHAR}, #{hkdz,jdbcType=VARCHAR}, 
+      #{jtdh,jdbcType=VARCHAR}, #{hkyb,jdbcType=VARCHAR}, #{jzcs,jdbcType=NUMERIC}, #{jzrq,jdbcType=TIMESTAMP}, 
+      #{czrq,jdbcType=TIMESTAMP}, #{jzkh,jdbcType=VARCHAR}, #{sfdm,jdbcType=NUMERIC}, 
+      #{jgdm,jdbcType=NUMERIC}, #{gjdm,jdbcType=NUMERIC}, #{lxrm,jdbcType=VARCHAR}, #{lxgx,jdbcType=NUMERIC}, 
+      #{lxdz,jdbcType=VARCHAR}, #{lxdh,jdbcType=VARCHAR}, #{dbrm,jdbcType=VARCHAR}, #{dbgx,jdbcType=NUMERIC}, 
+      #{sbhm,jdbcType=VARCHAR}, #{ybkh,jdbcType=VARCHAR}, #{zztx,jdbcType=NUMERIC}, #{jdjg,jdbcType=NUMERIC}, 
+      #{jdsj,jdbcType=TIMESTAMP}, #{jdr,jdbcType=VARCHAR}, #{zxbz,jdbcType=NUMERIC}, 
+      #{zxr,jdbcType=VARCHAR}, #{zxsj,jdbcType=TIMESTAMP}, #{xgsj,jdbcType=TIMESTAMP}, 
+      #{csdSqs,jdbcType=NUMERIC}, #{csdS,jdbcType=NUMERIC}, #{csdX,jdbcType=NUMERIC}, 
+      #{jgdmSqs,jdbcType=NUMERIC}, #{jgdmS,jdbcType=NUMERIC}, #{xzzSqs,jdbcType=NUMERIC}, 
+      #{xzzS,jdbcType=NUMERIC}, #{xzzX,jdbcType=NUMERIC}, #{xzzYb,jdbcType=VARCHAR}, 
+      #{xzzDh,jdbcType=VARCHAR}, #{hkdzSqs,jdbcType=NUMERIC}, #{hkdzS,jdbcType=NUMERIC}, 
+      #{hkdzX,jdbcType=NUMERIC}, #{xzzQtdz,jdbcType=VARCHAR}, #{hkdzQtdz,jdbcType=VARCHAR}, 
+      #{zjlx,jdbcType=NUMERIC}, #{zjhm,jdbcType=VARCHAR}, #{jhrm,jdbcType=VARCHAR}, #{jhdh,jdbcType=VARCHAR}, 
+      #{jhdz,jdbcType=VARCHAR}, #{brsg,jdbcType=NUMERIC}, #{brtz,jdbcType=NUMERIC}, #{bslzt,jdbcType=NUMERIC}, 
+      #{gsscd,jdbcType=NUMERIC}, #{ssscd,jdbcType=NUMERIC}, #{mpiid,jdbcType=VARCHAR}, 
+      #{glzh,jdbcType=NUMERIC}, #{zfbid,jdbcType=VARCHAR}, #{zfbsfqy,jdbcType=NUMERIC}, 
+      #{state,jdbcType=NUMERIC}, #{bxh,jdbcType=VARCHAR}, #{lxzh,jdbcType=VARCHAR}, #{kzhm,jdbcType=VARCHAR}, 
+      #{jsdh,jdbcType=NUMERIC}, #{yl,jdbcType=NUMERIC}, #{rl,jdbcType=NUMERIC}, #{bxlxmc,jdbcType=VARCHAR}, 
+      #{xzqydm,jdbcType=VARCHAR}, #{tjid,jdbcType=NUMERIC}, #{ttdm,jdbcType=VARCHAR}, 
+      #{lwh,jdbcType=NUMERIC}, #{xj,jdbcType=VARCHAR}, #{jt,jdbcType=VARCHAR}, #{mp,jdbcType=VARCHAR}, 
+      #{bzkxx,jdbcType=VARCHAR}, #{bzksbm,jdbcType=VARCHAR}, #{bzkkh,jdbcType=VARCHAR}, 
+      #{cbdxzqydm,jdbcType=VARCHAR}, #{pydm,jdbcType=VARCHAR}, #{mhbs,jdbcType=NUMERIC}, 
+      #{smkh,jdbcType=VARCHAR}, #{jrz,jdbcType=VARCHAR}, #{zyhm,jdbcType=VARCHAR}, #{rylx,jdbcType=NUMERIC}, 
+      #{kplx,jdbcType=NUMERIC}, #{cyrybz,jdbcType=NUMERIC}, #{dqbm,jdbcType=VARCHAR}, 
+      #{rylb,jdbcType=VARCHAR}, #{tsbbm,jdbcType=VARCHAR}, #{icmw,jdbcType=VARCHAR}, 
+      #{fjrylb,jdbcType=VARCHAR}, #{sj,jdbcType=VARCHAR}, #{brbz,jdbcType=VARCHAR}, #{ltbr,jdbcType=NUMERIC}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.mybatis.entity.MsBrda" >
+    update ms_brda
+    set mzhm = #{mzhm,jdbcType=VARCHAR},
+      brxm = #{brxm,jdbcType=VARCHAR},
+      fyzh = #{fyzh,jdbcType=VARCHAR},
+      sfzh = #{sfzh,jdbcType=VARCHAR},
+      brxz = #{brxz,jdbcType=NUMERIC},
+      brxb = #{brxb,jdbcType=NUMERIC},
+      csny = #{csny,jdbcType=TIMESTAMP},
+      hyzk = #{hyzk,jdbcType=NUMERIC},
+      zydm = #{zydm,jdbcType=NUMERIC},
+      mzdm = #{mzdm,jdbcType=NUMERIC},
+      xxdm = #{xxdm,jdbcType=NUMERIC},
+      gmyw = #{gmyw,jdbcType=NUMERIC},
+      dwxh = #{dwxh,jdbcType=NUMERIC},
+      dwmc = #{dwmc,jdbcType=VARCHAR},
+      dwdh = #{dwdh,jdbcType=VARCHAR},
+      dwyb = #{dwyb,jdbcType=VARCHAR},
+      hkdz = #{hkdz,jdbcType=VARCHAR},
+      jtdh = #{jtdh,jdbcType=VARCHAR},
+      hkyb = #{hkyb,jdbcType=VARCHAR},
+      jzcs = #{jzcs,jdbcType=NUMERIC},
+      jzrq = #{jzrq,jdbcType=TIMESTAMP},
+      czrq = #{czrq,jdbcType=TIMESTAMP},
+      jzkh = #{jzkh,jdbcType=VARCHAR},
+      sfdm = #{sfdm,jdbcType=NUMERIC},
+      jgdm = #{jgdm,jdbcType=NUMERIC},
+      gjdm = #{gjdm,jdbcType=NUMERIC},
+      lxrm = #{lxrm,jdbcType=VARCHAR},
+      lxgx = #{lxgx,jdbcType=NUMERIC},
+      lxdz = #{lxdz,jdbcType=VARCHAR},
+      lxdh = #{lxdh,jdbcType=VARCHAR},
+      dbrm = #{dbrm,jdbcType=VARCHAR},
+      dbgx = #{dbgx,jdbcType=NUMERIC},
+      sbhm = #{sbhm,jdbcType=VARCHAR},
+      ybkh = #{ybkh,jdbcType=VARCHAR},
+      zztx = #{zztx,jdbcType=NUMERIC},
+      jdjg = #{jdjg,jdbcType=NUMERIC},
+      jdsj = #{jdsj,jdbcType=TIMESTAMP},
+      jdr = #{jdr,jdbcType=VARCHAR},
+      zxbz = #{zxbz,jdbcType=NUMERIC},
+      zxr = #{zxr,jdbcType=VARCHAR},
+      zxsj = #{zxsj,jdbcType=TIMESTAMP},
+      xgsj = #{xgsj,jdbcType=TIMESTAMP},
+      csd_sqs = #{csdSqs,jdbcType=NUMERIC},
+      csd_s = #{csdS,jdbcType=NUMERIC},
+      csd_x = #{csdX,jdbcType=NUMERIC},
+      jgdm_sqs = #{jgdmSqs,jdbcType=NUMERIC},
+      jgdm_s = #{jgdmS,jdbcType=NUMERIC},
+      xzz_sqs = #{xzzSqs,jdbcType=NUMERIC},
+      xzz_s = #{xzzS,jdbcType=NUMERIC},
+      xzz_x = #{xzzX,jdbcType=NUMERIC},
+      xzz_yb = #{xzzYb,jdbcType=VARCHAR},
+      xzz_dh = #{xzzDh,jdbcType=VARCHAR},
+      hkdz_sqs = #{hkdzSqs,jdbcType=NUMERIC},
+      hkdz_s = #{hkdzS,jdbcType=NUMERIC},
+      hkdz_x = #{hkdzX,jdbcType=NUMERIC},
+      xzz_qtdz = #{xzzQtdz,jdbcType=VARCHAR},
+      hkdz_qtdz = #{hkdzQtdz,jdbcType=VARCHAR},
+      zjlx = #{zjlx,jdbcType=NUMERIC},
+      zjhm = #{zjhm,jdbcType=VARCHAR},
+      jhrm = #{jhrm,jdbcType=VARCHAR},
+      jhdh = #{jhdh,jdbcType=VARCHAR},
+      jhdz = #{jhdz,jdbcType=VARCHAR},
+      brsg = #{brsg,jdbcType=NUMERIC},
+      brtz = #{brtz,jdbcType=NUMERIC},
+      bslzt = #{bslzt,jdbcType=NUMERIC},
+      gsscd = #{gsscd,jdbcType=NUMERIC},
+      ssscd = #{ssscd,jdbcType=NUMERIC},
+      mpiid = #{mpiid,jdbcType=VARCHAR},
+      glzh = #{glzh,jdbcType=NUMERIC},
+      zfbid = #{zfbid,jdbcType=VARCHAR},
+      zfbsfqy = #{zfbsfqy,jdbcType=NUMERIC},
+      state = #{state,jdbcType=NUMERIC},
+      bxh = #{bxh,jdbcType=VARCHAR},
+      lxzh = #{lxzh,jdbcType=VARCHAR},
+      kzhm = #{kzhm,jdbcType=VARCHAR},
+      jsdh = #{jsdh,jdbcType=NUMERIC},
+      yl = #{yl,jdbcType=NUMERIC},
+      rl = #{rl,jdbcType=NUMERIC},
+      bxlxmc = #{bxlxmc,jdbcType=VARCHAR},
+      xzqydm = #{xzqydm,jdbcType=VARCHAR},
+      tjid = #{tjid,jdbcType=NUMERIC},
+      ttdm = #{ttdm,jdbcType=VARCHAR},
+      lwh = #{lwh,jdbcType=NUMERIC},
+      xj = #{xj,jdbcType=VARCHAR},
+      jt = #{jt,jdbcType=VARCHAR},
+      mp = #{mp,jdbcType=VARCHAR},
+      bzkxx = #{bzkxx,jdbcType=VARCHAR},
+      bzksbm = #{bzksbm,jdbcType=VARCHAR},
+      bzkkh = #{bzkkh,jdbcType=VARCHAR},
+      cbdxzqydm = #{cbdxzqydm,jdbcType=VARCHAR},
+      pydm = #{pydm,jdbcType=VARCHAR},
+      mhbs = #{mhbs,jdbcType=NUMERIC},
+      smkh = #{smkh,jdbcType=VARCHAR},
+      jrz = #{jrz,jdbcType=VARCHAR},
+      zyhm = #{zyhm,jdbcType=VARCHAR},
+      rylx = #{rylx,jdbcType=NUMERIC},
+      kplx = #{kplx,jdbcType=NUMERIC},
+      cyrybz = #{cyrybz,jdbcType=NUMERIC},
+      dqbm = #{dqbm,jdbcType=VARCHAR},
+      rylb = #{rylb,jdbcType=VARCHAR},
+      tsbbm = #{tsbbm,jdbcType=VARCHAR},
+      icmw = #{icmw,jdbcType=VARCHAR},
+      fjrylb = #{fjrylb,jdbcType=VARCHAR},
+      sj = #{sj,jdbcType=VARCHAR},
+      brbz = #{brbz,jdbcType=VARCHAR},
+      ltbr = #{ltbr,jdbcType=NUMERIC}
+    where brid = #{brid,jdbcType=NUMERIC}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
+    select 'true' as QUERYID,brid, mzhm, brxm, fyzh, sfzh, brxz, brxb, csny, hyzk, zydm, 
+    mzdm, xxdm, gmyw, dwxh, dwmc, dwdh, dwyb, hkdz, jtdh, hkyb, jzcs, jzrq, czrq, jzkh, 
+    sfdm, jgdm, gjdm, lxrm, lxgx, lxdz, lxdh, dbrm, dbgx, sbhm, ybkh, zztx, jdjg, jdsj, 
+    jdr, zxbz, zxr, zxsj, xgsj, csd_sqs, csd_s, csd_x, jgdm_sqs, jgdm_s, xzz_sqs, xzz_s, 
+    xzz_x, xzz_yb, xzz_dh, hkdz_sqs, hkdz_s, hkdz_x, xzz_qtdz, hkdz_qtdz, zjlx, zjhm, 
+    jhrm, jhdh, jhdz, brsg, brtz, bslzt, gsscd, ssscd, mpiid, glzh, zfbid, zfbsfqy, state, 
+    bxh, lxzh, kzhm, jsdh, yl, rl, bxlxmc, xzqydm, tjid, ttdm, lwh, xj, jt, mp, bzkxx, 
+    bzksbm, bzkkh, cbdxzqydm, pydm, mhbs, smkh, jrz, zyhm, rylx, kplx, cyrybz, dqbm, 
+    rylb, tsbbm, icmw, fjrylb, sj, brbz, ltbr
+    from ms_brda
+    where brid = #{brid,jdbcType=NUMERIC}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select brid, mzhm, brxm, fyzh, sfzh, brxz, brxb, csny, hyzk, zydm, mzdm, xxdm, gmyw, 
+    dwxh, dwmc, dwdh, dwyb, hkdz, jtdh, hkyb, jzcs, jzrq, czrq, jzkh, sfdm, jgdm, gjdm, 
+    lxrm, lxgx, lxdz, lxdh, dbrm, dbgx, sbhm, ybkh, zztx, jdjg, jdsj, jdr, zxbz, zxr, 
+    zxsj, xgsj, csd_sqs, csd_s, csd_x, jgdm_sqs, jgdm_s, xzz_sqs, xzz_s, xzz_x, xzz_yb, 
+    xzz_dh, hkdz_sqs, hkdz_s, hkdz_x, xzz_qtdz, hkdz_qtdz, zjlx, zjhm, jhrm, jhdh, jhdz, 
+    brsg, brtz, bslzt, gsscd, ssscd, mpiid, glzh, zfbid, zfbsfqy, state, bxh, lxzh, kzhm, 
+    jsdh, yl, rl, bxlxmc, xzqydm, tjid, ttdm, lwh, xj, jt, mp, bzkxx, bzksbm, bzkkh, 
+    cbdxzqydm, pydm, mhbs, smkh, jrz, zyhm, rylx, kplx, cyrybz, dqbm, rylb, tsbbm, icmw, 
+    fjrylb, sj, brbz, ltbr
+    from ms_brda
+  </select>
+</mapper>
