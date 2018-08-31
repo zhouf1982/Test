@@ -1,7 +1,6 @@
 package com.javatest.test;
 
 import java.sql.*;
-import java.util.Map;
 
 public class JDBCTest {
     public static void main(String[] args) {
@@ -10,7 +9,7 @@ public class JDBCTest {
         String userName;
         String password;
 
-        url = "jdbc:postgresql://localhost:5432/mytest2017";
+        url = "jdbc:postgresql://localhost:5432/mytest2018";
         driver = "org.postgresql.Driver";
         userName = "postgres";
         password = "zhoufeng";
@@ -35,12 +34,13 @@ public class JDBCTest {
         try {
             statement = conn.createStatement();
 
-            String sql = "select id, nickname from sys_users;";
+            String sql = "select * from t_test";
             resultSet = statement.executeQuery(sql);
 
             while (resultSet.next()) {
                 System.out.println(resultSet.getString(1) + "\t"
-                        + resultSet.getString(2));
+                        + resultSet.getString(2) + "\t"
+                + resultSet.getString(3));
             }
 
         } catch (SQLException e) {

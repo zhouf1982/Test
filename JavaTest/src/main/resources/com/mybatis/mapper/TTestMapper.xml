@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatis.mapper.TTestMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatis.entity.TTest" >
+    <result column="id" property="id" jdbcType="NUMERIC" />
+    <result column="key" property="key" jdbcType="VARCHAR" />
+    <result column="val" property="val" jdbcType="VARCHAR" />
+  </resultMap>
+  <insert id="insert" parameterType="com.mybatis.entity.TTest" >
+    <selectKey resultType="java.math.BigDecimal" keyProperty="id" order="AFTER" >
+      Postgresql
+    </selectKey>
+    insert into t_test (key, val)
+    values (#{key,jdbcType=VARCHAR}, #{val,jdbcType=VARCHAR})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, key, val
+    from t_test
+  </select>
+</mapper>
