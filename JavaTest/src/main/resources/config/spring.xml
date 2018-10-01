@@ -5,7 +5,7 @@
 
     <import resource="spring-mybatis.xml" />
 
-    <!--<import resource="spring-quartz.xml" />-->
+    <import resource="spring-quartz.xml" />
 
     <bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
         <property name="corePoolSize"  value="5" />
