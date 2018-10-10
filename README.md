@@ -7,16 +7,24 @@
 
 ## 常用地址记录
 
-[Maven Repository](https://mvnrepository.com)
+- [Maven Repository](https://mvnrepository.com)
+- [Spring](http://spring.io)
+- [mybatis3](http://www.mybatis.org/mybatis-3/)
 
-## 环境要求
 
-- jdk11
-- spring5
-- spring5mvc
+## 环境和框架整理
+
+- 推荐使用jdk 11
+- spring 5
+- spring 5 mvc
 - axis2 1.7.8
-- mybatis3.4.6
-- mybatis-spring1.3.2
+- mybatis 3.4.6
+- mybatis-spring 1.3.2
+- quartz 2.2.1
+- 推荐使用Gson处理json数据 Gson 2.8.2
+- 推荐使用dom4j处理xml数据 dom4j 1.6.1
+- 推荐使用log4j2处理日志 log4j2 2.10.0
+- 必须进行junit测试 junit 4.12
 
 ## 数据库
 
@@ -24,9 +32,22 @@
 
 ## 项目初始化
 
-- git clone --origin Test https://github.com/zhouf1982/Test.git
-- 打开项目 JavaTest
+- 下载项目或是用命令行创建分支
+> git clone --origin Test https://github.com/zhouf1982/Test.git
+- 复制并打开项目
+> ./JavaTest
 - 配置maven环境
 - 如果使用IDE请进行相应配置
 - 使用pom.xml刷新maven仓库
+> maven国内镜像(阿里云)请在settings.xml中配置mirrors子节点
+``` xml
+
+<mirror>
+    <id>nexus-aliyun</id>
+    <mirrorOf>*</mirrorOf>
+    <name>Nexus aliyun</name>
+    <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+</mirror>
+
+```
 
