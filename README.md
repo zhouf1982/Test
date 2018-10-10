@@ -26,5 +26,7 @@
 
 - git clone --origin Test https://github.com/zhouf1982/Test.git
 - 打开项目 JavaTest
+- 配置maven环境
 - 如果使用IDE请进行相应配置
+- 使用pom.xml刷新maven仓库
 
