@@ -5,12 +5,17 @@
 
 若有内容在使用中有版权（协议）要求，请联系[作者](mailto:zhouf1982@gmail.com)。
 
+## 版本说明
+
+| 版本 | 日期 | 说明 |
+| --- | --- | ---|
+| 0.0.0.1 | 2018-10-10 | 项目初始 |
+
 ## 常用地址记录
 
 - [Maven Repository](https://mvnrepository.com)
 - [Spring](http://spring.io)
 - [mybatis3](http://www.mybatis.org/mybatis-3/)
-
 
 ## 环境和框架整理
 
