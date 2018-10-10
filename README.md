@@ -18,7 +18,13 @@
 - mybatis3.4.6
 - mybatis-spring1.3.2
 
-### 数据库
+## 数据库
 
 > - postgrsql 10
+
+## 项目初始化
+
+- git clone --origin Test https://github.com/zhouf1982/Test.git
+- 打开项目 JavaTest
+- 如果使用IDE请进行相应配置
 
