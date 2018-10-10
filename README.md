@@ -9,15 +9,16 @@
 
 | 版本 | 日期 | 说明 |
 | --- | --- | ---|
-| 0.0.0.1 | 2018-10-10 | 项目初始 |
-
+| 0.0.0.1 | 2018-10-10 | JavaTest 项目初始 | 
 ## 常用地址记录
 
 - [Maven Repository](https://mvnrepository.com)
 - [Spring](http://spring.io)
 - [mybatis3](http://www.mybatis.org/mybatis-3/)
 
-## 环境和框架整理
+## JavaTest
+
+### 环境和框架整理
 
 - 推荐使用jdk 11
 - spring 5
@@ -31,11 +32,11 @@
 - 推荐使用log4j2处理日志 log4j2 2.10.0
 - 必须进行junit测试 junit 4.12
 
-## 数据库
+### 数据库
 
 > - postgrsql 10
 
-## 项目初始化
+### 项目初始化
 
 - 下载项目或是用命令行创建分支
 > git clone --origin Test https://github.com/zhouf1982/Test.git
