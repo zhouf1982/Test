@@ -5,13 +5,16 @@ import org.apache.logging.log4j.Logger;
 
 import java.security.MessageDigest;
 
-public class MD5 {
-    private final static Logger logger = LogManager.getLogger(MD5.class);
+/**
+ * @author zhoufeng
+ */
+public class Md5 {
+    private final static Logger logger = LogManager.getLogger(Md5.class);
 
     public static String md5(String text) throws Exception{
         String encodeStr = "";
         try {
-            MessageDigest md5 = MessageDigest.getInstance("MD5");
+            MessageDigest md5 = MessageDigest.getInstance("Md5");
             md5.update(text.getBytes("UTF-8"));
             byte[] md5Array = md5.digest();
 

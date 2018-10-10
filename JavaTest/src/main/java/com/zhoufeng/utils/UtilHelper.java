@@ -10,6 +10,52 @@ import java.util.Base64;
 public class UtilHelper {
     private final static Logger logger = LogManager.getLogger(UtilHelper.class);
 
+    /**
+     * 中文转unicode
+     * @param gbString 入
+     * @return 出
+     */
+    public static String gbEncoding(final String gbString) {
+        //utfBytes = [测, 试]
+        char[] utfBytes = gbString.toCharArray();
+        String unicodeBytes = "";
+        for (int byteIndex = 0; byteIndex < utfBytes.length; byteIndex++) {
+            //转换为16进制整型字符串
+            String hexB = Integer.toHexString(utfBytes[byteIndex]);
+            if (hexB.length() <= 2) {
+                hexB = "00" + hexB;
+            }
+            unicodeBytes = unicodeBytes + "\\u" + hexB;
+        }
+        System.out.println("unicodeBytes is: " + unicodeBytes);
+        return unicodeBytes;
+    }
+
+    /**
+     * Unicode转中文
+     * @param dataStr 入
+     * @return 出
+     */
+    public static String decodeUnicode(final String dataStr) {
+        int start = 0;
+        int end = 0;
+        final StringBuffer buffer = new StringBuffer();
+        while (start > -1) {
+            end = dataStr.indexOf("\\u", start + 2);
+            String charStr = "";
+            if (end == -1) {
+                charStr = dataStr.substring(start + 2, dataStr.length());
+            } else {
+                charStr = dataStr.substring(start + 2, end);
+            }
+            // 16进制parse整形字符串
+            char letter = (char) Integer.parseInt(charStr, 16);
+            buffer.append(new Character(letter).toString());
+            start = end;
+        }
+        return buffer.toString();
+    }
+
     public static String byte2Base64String(byte[] bytes) {
         return Base64.getEncoder().encodeToString(bytes);
     }
@@ -40,7 +86,7 @@ public class UtilHelper {
 
     private static byte[] md5Encrypt(String encryptStr) {
         try {
-            MessageDigest md5 = MessageDigest.getInstance("MD5");
+            MessageDigest md5 = MessageDigest.getInstance("Md5");
             md5.update(encryptStr.getBytes("utf8"));
             return md5.digest();
         } catch (Exception e) {
@@ -54,7 +100,7 @@ public class UtilHelper {
 //    public static String md5Encrypt(String text) throws Exception{
 //        String encodeStr = "";
 //        try {
-//            MessageDigest md5 = MessageDigest.getInstance("MD5");
+//            MessageDigest md5 = MessageDigest.getInstance("Md5");
 //            md5.update(text.getBytes("UTF-8"));
 //            byte[] md5Array = md5.digest();
 //

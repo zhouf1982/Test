@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+    <service name="announce">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out"
+                             class="com.webservices.AnnounceMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">com.webservices.AnnounceSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <parameter name="ServiceObjectSupplier">
+            org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
+        </parameter>
+        <parameter name="SpringBeanName">announce</parameter>
+        <operation name="runService" mep="http://www.w3.org/ns/wsdl/in-out"
+                   namespace="http://webservices.com">
+            <actionMapping>urn:RunService</actionMapping>
+            <outputActionMapping>urn:RunServiceResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

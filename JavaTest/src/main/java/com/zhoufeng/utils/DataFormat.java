@@ -39,7 +39,7 @@ public class DataFormat {
         return new BigDecimal(object.toString());
     }
 
-    public static String getStringFrom(String text, String format) {
+    public static String getStringFromFormat(String text, String format) {
         String str = "";
 
         int strLen = text.length();
@@ -67,6 +67,20 @@ public class DataFormat {
         }
 
         return date;
+    }
+
+    public static String getStrFormDate(Date date) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        String ret = null;
+
+        try {
+            ret = format.format(date);
+        } catch (Exception e) {
+            logger.error(e.getMessage());
+        }
+
+        return null;
     }
 
     public static Date getDateFromStr(String text) {
