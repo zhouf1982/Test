@@ -9,8 +9,16 @@
 
 [Maven Repository](https://mvnrepository.com)
 
+## 环境要求
+
+- jdk11
+- spring5
+- spring5mvc
+- axis2 1.7.8
+- mybatis3.4.6
+- mybatis-spring1.3.2
+
 ### 数据库
 
-> - spring 5
 > - postgrsql 10
 
