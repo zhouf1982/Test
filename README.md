@@ -34,7 +34,9 @@
 
 ### 数据库
 
-> - postgrsql 10
+- postgrsql 10
+
+> Java测试项目建表语句：JavaTest/Design/plsql_scripts/init.sql
 
 ### 项目初始化
 
