@@ -1,4 +1,4 @@
-package com.zhoufeng.tools;
+package com.power.tools;
 
 import com.google.zxing.common.BitMatrix;
 
