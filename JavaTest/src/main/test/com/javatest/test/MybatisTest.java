@@ -7,7 +7,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-public class JavaTest extends TestBase {
+public class MybatisTest extends TestBase {
     @Autowired
     TTestMapper tTestMapper;
 
