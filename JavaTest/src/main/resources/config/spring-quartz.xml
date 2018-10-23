@@ -17,6 +17,7 @@
         <property name="concurrent" value="false" />
     </bean>
 
+    <!-- 定时执行 -->
     <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
         <property name="jobDetail" ref="task" />
         <property name="cronExpression">
@@ -24,11 +25,12 @@
         </property>
     </bean>
 
-    <bean id="cronTrigger1" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+    <!-- 只在项目启动的时候启动一次设置repeatInterval为0，循环可设置相应时间 -->
+    <bean id="cronTrigger1" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
         <property name="jobDetail" ref="task1" />
-        <property name="cronExpression">
-            <value>1 * * ? * *</value>
-        </property>
+        <property name="startDelay" value="500" />
+        <property name="repeatInterval" value="0" />
+        <property name="repeatCount" value="0"/>
     </bean>
 
     <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">

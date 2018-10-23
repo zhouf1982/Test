@@ -1,9 +1,9 @@
-package com.business.third.realize;
+package com.webservices.realize;
 
-import com.business.third.InterfaceForWs;
+import com.webservices.InterfaceForWs;
 
 /**
- * @author zhoufeng
+ * @author power
  */
 public class InterfaceForWsReal implements InterfaceForWs {
     @Override

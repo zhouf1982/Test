@@ -11,7 +11,7 @@
         <parameter name="ServiceObjectSupplier">
             org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier
         </parameter>
-        <parameter name="SpringBeanName">announce</parameter>
+        <parameter name="SpringBeanName">interfaceForWs</parameter>
         <operation name="runService" mep="http://www.w3.org/ns/wsdl/in-out"
                    namespace="http://webservices.com">
             <actionMapping>urn:RunService</actionMapping>

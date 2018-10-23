@@ -1,4 +1,4 @@
-package com.business.third;
+package com.third;
 
 import org.quartz.DisallowConcurrentExecution;
 
