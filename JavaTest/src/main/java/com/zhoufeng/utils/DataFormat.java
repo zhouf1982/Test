@@ -71,6 +71,10 @@ public class DataFormat {
     }
 
     public static String getStrFormDate(Date date) {
+        if (null == date) {
+            return "";
+        }
+
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         String ret = null;
