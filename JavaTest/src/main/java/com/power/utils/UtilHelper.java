@@ -1,4 +1,4 @@
-package com.zhoufeng.utils;
+package com.power.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

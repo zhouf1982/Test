@@ -1,7 +1,7 @@
-package com.business.third;
+package com.third;
 
 /**
- * @author zhoufeng
+ * @author power
  */
 public interface InterfaceForWs {
 

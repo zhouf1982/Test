@@ -1,4 +1,4 @@
-package com.zhoufeng.utils;
+package com.power.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.security.MessageDigest;
 
 /**
- * @author zhoufeng
+ * @author power
  */
 public class Md5 {
     private final static Logger logger = LogManager.getLogger(Md5.class);

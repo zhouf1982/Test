@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author zhoufeng
+ * @author power
  */
 @Controller
 @RequestMapping("/HttpApiTest")

@@ -12,7 +12,7 @@ public class JDBCTest {
         url = "jdbc:postgresql://localhost:5432/mytest2018";
         driver = "org.postgresql.Driver";
         userName = "postgres";
-        password = "zhoufeng";
+        password = "power";
 
 
         try {
