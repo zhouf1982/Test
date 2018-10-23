@@ -10,6 +10,8 @@
 | 版本 | 日期 | 说明 |
 | --- | --- | ---|
 | 0.0.0.1 | 2018-10-10 | JavaTest 项目初始 | 
+| 0.0.0.2 | 2028-10-23 | 开发环境（svn/git和maven的项目导入） |
+
 ## 常用地址记录
 
 - [Maven Repository](https://mvnrepository.com)
@@ -59,3 +61,10 @@
 
 ```
 
+#### maven项目，git/svn上，使用intellij idea的初始
+
+- 使用git/svn客户端clone/checkOut
+- 使用idea的import
+- 选择maven项目导入
+- 设置 Environment settings...
+- 设置各种目录结构及必要的包（axis2的jar和mar）等，如果有需要的话
