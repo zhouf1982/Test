@@ -9,7 +9,10 @@ import java.io.File;
 import java.io.OutputStream;
 import java.util.Hashtable;
 
-public class QRUtil {
+/**
+ * @author internet
+ */
+public class QrUtil {
     public static void create(String text, OutputStream stream, Integer size) throws Exception {
         int width = 100 + (10 * size);
         int height = 100 + (10 * size);
