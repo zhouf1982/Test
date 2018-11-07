@@ -1,11 +1,8 @@
 {
-  "name": "reactjstest",
+  "name": "ReactJsTest",
   "version": "1.0.0",
-  "description": "## 说明 > 先试试，不行再换",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "zhouf",
-  "license": "ISC"
+  "repository": "https://github.com/zhouf1982/Test",
+  "author": "zhoufeng",
+  "license": "MIT"
 }
