@@ -1,0 +1,12 @@
+{
+  "name": "ReactJsTest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zhouf1982/Test/tree/master/ReactJsTest",
+  "author": "zhoufeng",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
