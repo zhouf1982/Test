@@ -69,8 +69,3 @@
 - tomcat: 配置
 - mybatis: generate-resources -e
 
-#### git更新文件例外处理
-
-- 说明： 因为有些本地设置不需要同步到git，为了方便处理，上传了exclude文件，请替换 Test/.git/info/exlude文件
-
-> $ cp exclude .git/info/exclude

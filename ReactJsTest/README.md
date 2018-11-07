@@ -10,8 +10,8 @@
 - 安装yarn及项目初始化
 
 ```bash
-> brew install yarn
-cd ReactJsTest
-yarn init
+$ brew install yarn
+$ cd ReactJsTest
+$ yarn init
 
 ```
