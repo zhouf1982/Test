@@ -14,7 +14,6 @@ public class JDBCTest {
         userName = "postgres";
         password = "power";
 
-
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException e) {
@@ -35,6 +34,9 @@ public class JDBCTest {
             statement = conn.createStatement();
 
             String sql = "select * from t_test";
+
+
+
             resultSet = statement.executeQuery(sql);
 
             while (resultSet.next()) {
@@ -46,7 +48,5 @@ public class JDBCTest {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
 }
