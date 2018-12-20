@@ -35,8 +35,6 @@ public class JDBCTest {
 
             String sql = "select * from t_test";
 
-
-
             resultSet = statement.executeQuery(sql);
 
             while (resultSet.next()) {
