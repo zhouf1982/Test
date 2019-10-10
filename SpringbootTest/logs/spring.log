@@ -1,0 +1,11 @@
+2019-10-10 14:37:07.304  INFO 3336 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 3336 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-10-10 14:37:07.318  INFO 3336 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-10-10 14:37:08.332  WARN 3336 --- [main] o.m.s.m.ClassPathMapperScanner           : No MyBatis mapper was found in '[com.springboottest.domain.repository]' package. Please check your configuration.
+2019-10-10 14:37:08.732  WARN 3336 --- [main] o.m.s.m.ClassPathMapperScanner           : No MyBatis mapper was found in '[com.springboottest]' package. Please check your configuration.
+2019-10-10 14:37:09.589  INFO 3336 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$438275ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-10 14:37:09.681  INFO 3336 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-10 14:37:10.765  INFO 3336 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-10 14:37:11.152  WARN 3336 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-10-10 14:37:11.169  WARN 3336 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-10 14:37:12.536  INFO 3336 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 6.444 seconds (JVM running for 11.298)
+2019-10-10 14:37:13.240  INFO 3336 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
