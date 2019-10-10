@@ -9,3 +9,35 @@
 2019-10-10 14:37:11.169  WARN 3336 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-10-10 14:37:12.536  INFO 3336 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 6.444 seconds (JVM running for 11.298)
 2019-10-10 14:37:13.240  INFO 3336 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-10 15:14:39.003  INFO 4054 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 4054 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-10-10 15:14:39.014  INFO 4054 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-10-10 15:14:41.126  INFO 4054 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f0c33bba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-10 15:14:41.202  INFO 4054 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-10 15:14:42.678  INFO 4054 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-10 15:14:43.128  WARN 4054 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-10-10 15:14:43.146  WARN 4054 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-10 15:14:45.108  INFO 4054 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 7.103 seconds (JVM running for 10.268)
+2019-10-10 15:14:46.092  INFO 4054 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-10-10 15:14:46.548  INFO 4054 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-10-10 15:14:46.575 DEBUG 4054 --- [main] c.s.d.r.T.selectAll                      : ==>  Preparing: select testid, testkey, testvalue from t_connect_test 
+2019-10-10 15:14:46.628 DEBUG 4054 --- [main] c.s.d.r.T.selectAll                      : ==> Parameters: 
+2019-10-10 15:14:46.685 DEBUG 4054 --- [main] c.s.d.r.T.selectAll                      : <==      Total: 0
+2019-10-10 15:14:46.738  INFO 4054 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-10 15:14:46.742  INFO 4054 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-10-10 15:14:46.753  INFO 4054 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-10-10 15:15:17.859  INFO 4078 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 4078 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-10-10 15:15:17.894  INFO 4078 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-10-10 15:15:20.038  INFO 4078 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$bf38e91a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-10 15:15:20.118  INFO 4078 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-10 15:15:21.490  INFO 4078 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-10 15:15:21.795  WARN 4078 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-10-10 15:15:21.819  WARN 4078 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-10 15:15:22.862  INFO 4078 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 6.073 seconds (JVM running for 9.125)
+2019-10-10 15:15:23.586  INFO 4078 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-10-10 15:15:23.804  INFO 4078 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-10-10 15:15:23.824 DEBUG 4078 --- [main] c.s.d.r.T.selectAll                      : ==>  Preparing: select testid, testkey, testvalue from t_connect_test 
+2019-10-10 15:15:23.868 DEBUG 4078 --- [main] c.s.d.r.T.selectAll                      : ==> Parameters: 
+2019-10-10 15:15:23.910 DEBUG 4078 --- [main] c.s.d.r.T.selectAll                      : <==      Total: 0
+2019-10-10 15:15:23.958  INFO 4078 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-10 15:15:23.961  INFO 4078 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-10-10 15:15:23.969  INFO 4078 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.

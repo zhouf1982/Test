@@ -51,8 +51,8 @@
            <property name="useActualColumnNames" value="true"/>
            schema="sys"
            -->
-    <table tableName="ms_cf02"
-      domainObjectName="MsCf02"
+    <table tableName="t_connect_test"
+      domainObjectName="TConnectTest"
       selectByPrimaryKeyQueryId="true"
     >
       <!--<generatedKey column="id" sqlStatement="Postgresql" identity="true" />-->

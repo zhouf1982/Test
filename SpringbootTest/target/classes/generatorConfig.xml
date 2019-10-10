@@ -4,32 +4,32 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-  <!--<classPathEntry location="/Users/zhoufeng/Development/maven/Repository/local/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar"/>-->
-  <classPathEntry location="D:\repository\com\oracle\ojdbc8\12.2.0.1\ojdbc8-12.2.0.1.jar"/>
+  <classPathEntry location="/Users/zhoufeng/Development/maven/Repository/local/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar"/>
+<!--  <classPathEntry location="D:\repository\com\oracle\ojdbc8\12.2.0.1\ojdbc8-12.2.0.1.jar"/>-->
   <!--   Oracle   MyBatis3   MyBatis3Simple  -->
-  <context id="Oracle" targetRuntime="MyBatis3Simple">
+  <context id="MyBatis3" targetRuntime="MyBatis3Simple">
     <commentGenerator>
       <property name="suppressAllComments" value="true"/>
       <property name="suppressDate" value="true"/>
     </commentGenerator>
 
-    <!--<jdbcConnection driverClass="org.postgresql.Driver"-->
-      <!--connectionURL="jdbc:postgresql://127.0.0.1:5432/mytest2019"-->
-      <!--userId="postgres"-->
-      <!--password="zhoufeng">-->
-    <!--</jdbcConnection>-->
-
-    <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-    connectionURL="jdbc:oracle:thin:@//ip:1521/dbname"
-    userId=""
-    password="">
+    <jdbcConnection driverClass="org.postgresql.Driver"
+      connectionURL="jdbc:postgresql://127.0.0.1:5432/mytest2019"
+      userId="postgres"
+      password="zhoufeng">
     </jdbcConnection>
+
+<!--    <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"-->
+<!--    connectionURL="jdbc:oracle:thin:@//ip:1521/dbname"-->
+<!--    userId=""-->
+<!--    password="">-->
+<!--    </jdbcConnection>-->
 
     <javaTypeResolver >
       <property name="forceBigDecimals" value="true" />
     </javaTypeResolver>
 
-    <javaModelGenerator targetPackage="com.hospital.budget.domain.entity" targetProject="src/main/java">
+    <javaModelGenerator targetPackage="com.springboottest.domain.entity" targetProject="src/main/java">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
@@ -38,7 +38,7 @@
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.hospital.budget.domain.repository"  targetProject="src/main/java">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.springboottest.domain.repository"  targetProject="src/main/java">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
@@ -51,8 +51,8 @@
            <property name="useActualColumnNames" value="true"/>
            schema="sys"
            -->
-    <table tableName="ms_cf02"
-      domainObjectName="MsCf02"
+    <table tableName="t_connect_test"
+      domainObjectName="TConnectTest"
       selectByPrimaryKeyQueryId="true"
     >
       <!--<generatedKey column="id" sqlStatement="Postgresql" identity="true" />-->
