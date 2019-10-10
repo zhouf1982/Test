@@ -20,9 +20,9 @@
     <!--</jdbcConnection>-->
 
     <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-    connectionURL="jdbc:oracle:thin:@//192.160.0.3:1521/lgyyorcl"
-    userId="lghosp_portal_his"
-    password="2ol8o0o0">
+    connectionURL="jdbc:oracle:thin:@//ip:1521/dbname"
+    userId=""
+    password="">
     </jdbcConnection>
 
     <javaTypeResolver >
