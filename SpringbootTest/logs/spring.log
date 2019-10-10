@@ -41,3 +41,26 @@
 2019-10-10 15:15:23.958  INFO 4078 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-10-10 15:15:23.961  INFO 4078 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
 2019-10-10 15:15:23.969  INFO 4078 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-10-10 15:35:48.529  INFO 4286 --- [restartedMain] c.s.SpringbootTestApplication            : Starting SpringbootTestApplication on zhoufengdeMacBook-Pro.local with PID 4286 (/Users/zhoufeng/WorkSpaces/Test/SpringbootTest/target/classes started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-10-10 15:35:48.565  INFO 4286 --- [restartedMain] c.s.SpringbootTestApplication            : No active profile set, falling back to default profiles: default
+2019-10-10 15:35:48.760  INFO 4286 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-10-10 15:35:48.761  INFO 4286 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-10-10 15:35:52.129  INFO 4286 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7c2ad353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-10 15:35:52.201  INFO 4286 --- [restartedMain] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-10-10 15:35:53.234  INFO 4286 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8800 (http)
+2019-10-10 15:35:53.302  INFO 4286 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-10-10 15:35:53.304  INFO 4286 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-10 15:35:53.628  INFO 4286 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-10-10 15:35:53.630  INFO 4286 --- [restartedMain] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 4863 ms
+2019-10-10 15:35:54.404  INFO 4286 --- [restartedMain] o.s.b.w.s.RegistrationBean               : Servlet CXFServlet was not registered (possibly already registered?)
+2019-10-10 15:35:54.958  INFO 4286 --- [restartedMain] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-10-10 15:35:55.916  INFO 4286 --- [restartedMain] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-10-10 15:35:56.932  INFO 4286 --- [restartedMain] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-10 15:35:57.135  WARN 4286 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-10-10 15:35:57.163  WARN 4286 --- [restartedMain] o.t.t.TemplateMode                       : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-10-10 15:35:57.708  INFO 4286 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-10-10 15:35:57.808  INFO 4286 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8800 (http) with context path ''
+2019-10-10 15:35:57.815  INFO 4286 --- [restartedMain] c.s.SpringbootTestApplication            : Started SpringbootTestApplication in 10.831 seconds (JVM running for 12.658)
+2019-10-10 15:37:54.312  INFO 4286 --- [http-nio-8800-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-10 15:37:54.314  INFO 4286 --- [http-nio-8800-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-10-10 15:37:54.337  INFO 4286 --- [http-nio-8800-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 23 ms

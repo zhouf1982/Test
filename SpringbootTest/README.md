@@ -35,6 +35,12 @@
 ### 项目配置关键点说明
 > 根包下面的Application.class
 - @MapperScan为mybatis的mapper扫描位置，注意修改包名后及时调整
-- 完成以上内容后进行环境测试，文件示例：ApplicationTests.class
+- 完成以上内容后进行环境测试，示例代码：ApplicationTests.class
 
 ### webservice发布
+> /SpringbootTest/src/main/java/com/springboottest/cxf
+- webservice使用springboot推荐的cxf
+- CxfConfig.class为ws配置相关，ws包下为实现，修改相关名称时注意修改标签对应的内容
+- 业务代码请在TestServicesImpl中增加
+- 测试启动：mvn spring-boot:run
+- 正常启动后访问[http://127.0.0.1:8800/soap](http://127.0.0.1:8800/soap)，选择服务后应能看到：http://127.0.0.1:8800/soap/services?wsdl
