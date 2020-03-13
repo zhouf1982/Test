@@ -64,3 +64,213 @@
 2019-10-10 15:37:54.312  INFO 4286 --- [http-nio-8800-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-10-10 15:37:54.314  INFO 4286 --- [http-nio-8800-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
 2019-10-10 15:37:54.337  INFO 4286 --- [http-nio-8800-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 23 ms
+2019-11-15 15:39:16.815  INFO 7316 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7316 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 15:39:16.898  INFO 7316 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 15:39:21.543  INFO 7316 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cd062c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 15:39:21.644  INFO 7316 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 15:39:22.362  INFO 7316 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 15:39:23.456  INFO 7316 --- [main] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-11-15 15:39:24.931  INFO 7316 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:39:25.259  WARN 7316 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-11-15 15:39:25.281  WARN 7316 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-15 15:39:26.139  INFO 7316 --- [main] o.q.i.StdSchedulerFactory                : Using default implementation for ThreadExecutor
+2019-11-15 15:39:26.172  INFO 7316 --- [main] o.q.c.SchedulerSignalerImpl              : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-15 15:39:26.173  INFO 7316 --- [main] o.q.c.QuartzScheduler                    : Quartz Scheduler v.2.3.1 created.
+2019-11-15 15:39:26.176  INFO 7316 --- [main] o.q.s.RAMJobStore                        : RAMJobStore initialized.
+2019-11-15 15:39:26.178  INFO 7316 --- [main] o.q.c.QuartzScheduler                    : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-15 15:39:26.179  INFO 7316 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-11-15 15:39:26.179  INFO 7316 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler version: 2.3.1
+2019-11-15 15:39:26.180  INFO 7316 --- [main] o.q.c.QuartzScheduler                    : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1dfe5dd1
+2019-11-15 15:39:26.572  INFO 7316 --- [main] o.s.s.q.SchedulerFactoryBean             : Starting Quartz Scheduler now
+2019-11-15 15:39:26.573  INFO 7316 --- [main] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-11-15 15:39:26.593  INFO 7316 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 10.814 seconds (JVM running for 19.247)
+2019-11-15 15:39:27.439  INFO 7316 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-11-15 15:39:27.836  INFO 7316 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-11-15 15:39:27.864 DEBUG 7316 --- [main] c.s.d.r.T.selectAll                      : ==>  Preparing: select testid, testkey, testvalue from t_connect_test 
+2019-11-15 15:39:27.914 DEBUG 7316 --- [main] c.s.d.r.T.selectAll                      : ==> Parameters: 
+2019-11-15 15:39:27.982 DEBUG 7316 --- [main] c.s.d.r.T.selectAll                      : <==      Total: 1
+2019-11-15 15:39:28.102  INFO 7316 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 15:39:28.112  INFO 7316 --- [Thread-2] o.s.s.q.SchedulerFactoryBean             : Shutting down Quartz Scheduler
+2019-11-15 15:39:28.112  INFO 7316 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 15:39:28.112  INFO 7316 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 15:39:28.113  INFO 7316 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 15:39:28.114  INFO 7316 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:39:28.116  INFO 7316 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-11-15 15:39:28.129  INFO 7316 --- [Thread-2] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-11-15 15:53:20.639  INFO 7642 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7642 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 15:53:20.658  INFO 7642 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 15:53:23.040  INFO 7642 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7a03b636] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 15:53:23.130  INFO 7642 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 15:53:23.787  INFO 7642 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 15:53:24.708  INFO 7642 --- [main] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-11-15 15:53:26.295  INFO 7642 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:53:26.663  WARN 7642 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-11-15 15:53:26.680  WARN 7642 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-15 15:53:27.570  INFO 7642 --- [main] o.q.i.StdSchedulerFactory                : Using default implementation for ThreadExecutor
+2019-11-15 15:53:27.610  INFO 7642 --- [main] o.q.c.SchedulerSignalerImpl              : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-15 15:53:27.610  INFO 7642 --- [main] o.q.c.QuartzScheduler                    : Quartz Scheduler v.2.3.1 created.
+2019-11-15 15:53:27.612  INFO 7642 --- [main] o.q.s.RAMJobStore                        : RAMJobStore initialized.
+2019-11-15 15:53:27.613  INFO 7642 --- [main] o.q.c.QuartzScheduler                    : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-15 15:53:27.614  INFO 7642 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-11-15 15:53:27.614  INFO 7642 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler version: 2.3.1
+2019-11-15 15:53:27.614  INFO 7642 --- [main] o.q.c.QuartzScheduler                    : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@117fb9ba
+2019-11-15 15:53:27.982  INFO 7642 --- [main] o.s.s.q.SchedulerFactoryBean             : Starting Quartz Scheduler now
+2019-11-15 15:53:27.984  INFO 7642 --- [main] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-11-15 15:53:28.009  INFO 7642 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 8.146 seconds (JVM running for 15.681)
+2019-11-15 15:53:28.967  INFO 7642 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 15:53:28.984  INFO 7642 --- [Thread-2] o.s.s.q.SchedulerFactoryBean             : Shutting down Quartz Scheduler
+2019-11-15 15:53:28.986  INFO 7642 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 15:53:28.987  INFO 7642 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 15:53:28.989  INFO 7642 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 15:53:28.990  INFO 7642 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:54:18.435  INFO 7666 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7666 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 15:54:18.445  INFO 7666 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 15:54:20.848  INFO 7666 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ad4fa6a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 15:54:20.951  INFO 7666 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 15:54:21.782  INFO 7666 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 15:54:41.043  INFO 7675 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7675 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 15:54:41.075  INFO 7675 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 15:54:43.836  INFO 7675 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ffadbd83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 15:54:43.963  INFO 7675 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 15:54:44.884  INFO 7675 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 15:54:46.069  INFO 7675 --- [main] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-11-15 15:54:47.736  INFO 7675 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:54:48.156  WARN 7675 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-11-15 15:54:48.178  WARN 7675 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-15 15:54:49.121  INFO 7675 --- [main] o.q.i.StdSchedulerFactory                : Using default implementation for ThreadExecutor
+2019-11-15 15:54:49.153  INFO 7675 --- [main] o.q.c.SchedulerSignalerImpl              : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-15 15:54:49.153  INFO 7675 --- [main] o.q.c.QuartzScheduler                    : Quartz Scheduler v.2.3.1 created.
+2019-11-15 15:54:49.155  INFO 7675 --- [main] o.q.s.RAMJobStore                        : RAMJobStore initialized.
+2019-11-15 15:54:49.156  INFO 7675 --- [main] o.q.c.QuartzScheduler                    : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-15 15:54:49.157  INFO 7675 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-11-15 15:54:49.157  INFO 7675 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler version: 2.3.1
+2019-11-15 15:54:49.157  INFO 7675 --- [main] o.q.c.QuartzScheduler                    : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1e9d721
+2019-11-15 15:54:49.543  INFO 7675 --- [main] o.s.s.q.SchedulerFactoryBean             : Starting Quartz Scheduler now
+2019-11-15 15:54:49.543  INFO 7675 --- [main] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-11-15 15:54:49.567  INFO 7675 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 9.692 seconds (JVM running for 17.577)
+2019-11-15 15:55:47.241  INFO 7675 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 15:55:47.249  INFO 7675 --- [Thread-2] o.s.s.q.SchedulerFactoryBean             : Shutting down Quartz Scheduler
+2019-11-15 15:55:47.250  INFO 7675 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 15:55:47.251  INFO 7675 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 15:55:47.252  INFO 7675 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 15:55:47.257  INFO 7675 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:00:21.426  INFO 7723 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7723 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 16:00:21.441  INFO 7723 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 16:00:23.729  INFO 7723 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$293dfbb3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 16:00:23.824  INFO 7723 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 16:00:24.414  INFO 7723 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 16:00:25.468  INFO 7723 --- [main] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-11-15 16:00:26.805  INFO 7723 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:00:27.193  WARN 7723 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-11-15 16:00:27.214  WARN 7723 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-15 16:00:28.111  INFO 7723 --- [main] o.q.i.StdSchedulerFactory                : Using default implementation for ThreadExecutor
+2019-11-15 16:00:28.136  INFO 7723 --- [main] o.q.c.SchedulerSignalerImpl              : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-15 16:00:28.136  INFO 7723 --- [main] o.q.c.QuartzScheduler                    : Quartz Scheduler v.2.3.1 created.
+2019-11-15 16:00:28.140  INFO 7723 --- [main] o.q.s.RAMJobStore                        : RAMJobStore initialized.
+2019-11-15 16:00:28.142  INFO 7723 --- [main] o.q.c.QuartzScheduler                    : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-15 16:00:28.142  INFO 7723 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-11-15 16:00:28.142  INFO 7723 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler version: 2.3.1
+2019-11-15 16:00:28.143  INFO 7723 --- [main] o.q.c.QuartzScheduler                    : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@fceab5d
+2019-11-15 16:00:28.457  INFO 7723 --- [main] o.s.s.q.SchedulerFactoryBean             : Starting Quartz Scheduler now
+2019-11-15 16:00:28.457  INFO 7723 --- [main] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-11-15 16:00:28.479  INFO 7723 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 7.837 seconds (JVM running for 16.074)
+2019-11-15 16:00:29.289  INFO 7723 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 16:00:29.294  INFO 7723 --- [Thread-2] o.s.s.q.SchedulerFactoryBean             : Shutting down Quartz Scheduler
+2019-11-15 16:00:29.294  INFO 7723 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 16:00:29.294  INFO 7723 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 16:00:29.297  INFO 7723 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 16:00:29.297  INFO 7723 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:01:20.967  INFO 7739 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7739 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 16:01:20.980  INFO 7739 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 16:01:23.492  INFO 7739 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d13dc66a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 16:01:23.590  INFO 7739 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 16:01:24.206  INFO 7739 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 16:01:25.228  INFO 7739 --- [main] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-11-15 16:01:26.630  INFO 7739 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:01:26.976  WARN 7739 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-11-15 16:01:26.992  WARN 7739 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-15 16:01:27.859  INFO 7739 --- [main] o.q.i.StdSchedulerFactory                : Using default implementation for ThreadExecutor
+2019-11-15 16:01:27.897  INFO 7739 --- [main] o.q.c.SchedulerSignalerImpl              : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-15 16:01:27.897  INFO 7739 --- [main] o.q.c.QuartzScheduler                    : Quartz Scheduler v.2.3.1 created.
+2019-11-15 16:01:27.899  INFO 7739 --- [main] o.q.s.RAMJobStore                        : RAMJobStore initialized.
+2019-11-15 16:01:27.900  INFO 7739 --- [main] o.q.c.QuartzScheduler                    : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-15 16:01:27.901  INFO 7739 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-11-15 16:01:27.901  INFO 7739 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler version: 2.3.1
+2019-11-15 16:01:27.902  INFO 7739 --- [main] o.q.c.QuartzScheduler                    : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1592e540
+2019-11-15 16:01:28.241  INFO 7739 --- [main] o.s.s.q.SchedulerFactoryBean             : Starting Quartz Scheduler now
+2019-11-15 16:01:28.242  INFO 7739 --- [main] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-11-15 16:01:28.269  INFO 7739 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 8.129 seconds (JVM running for 15.76)
+2019-11-15 16:01:29.014  INFO 7739 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 16:01:29.028  INFO 7739 --- [Thread-2] o.s.s.q.SchedulerFactoryBean             : Shutting down Quartz Scheduler
+2019-11-15 16:01:29.029  INFO 7739 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 16:01:29.029  INFO 7739 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 16:01:29.032  INFO 7739 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 16:01:29.033  INFO 7739 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:01:55.127  INFO 7747 --- [main] c.s.t.ApplicationTests                   : Starting ApplicationTests on zhoufengdeMacBook-Pro.local with PID 7747 (started by zhoufeng in /Users/zhoufeng/WorkSpaces/Test/SpringbootTest)
+2019-11-15 16:01:55.137  INFO 7747 --- [main] c.s.t.ApplicationTests                   : No active profile set, falling back to default profiles: default
+2019-11-15 16:01:57.292  INFO 7747 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$83736f0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 16:01:57.377  INFO 7747 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-15 16:01:57.988  INFO 7747 --- [main] o.a.c.w.s.f.ReflectionServiceFactoryBean : Creating Service {http://ws.cxf.springboottest.com/}TestServices from class com.springboottest.cxf.ws.TestServices
+2019-11-15 16:01:58.843  INFO 7747 --- [main] o.a.c.e.ServerImpl                       : Setting the server's publish address to be /services
+2019-11-15 16:02:00.349  INFO 7747 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:02:00.676  WARN 7747 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates (please add some templates or check your Thymeleaf configuration)
+2019-11-15 16:02:00.692  WARN 7747 --- [main] o.t.t.TemplateMode                       : [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-15 16:02:01.433  INFO 7747 --- [main] o.q.i.StdSchedulerFactory                : Using default implementation for ThreadExecutor
+2019-11-15 16:02:01.466  INFO 7747 --- [main] o.q.c.SchedulerSignalerImpl              : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-15 16:02:01.466  INFO 7747 --- [main] o.q.c.QuartzScheduler                    : Quartz Scheduler v.2.3.1 created.
+2019-11-15 16:02:01.468  INFO 7747 --- [main] o.q.s.RAMJobStore                        : RAMJobStore initialized.
+2019-11-15 16:02:01.470  INFO 7747 --- [main] o.q.c.QuartzScheduler                    : Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-15 16:02:01.470  INFO 7747 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019-11-15 16:02:01.470  INFO 7747 --- [main] o.q.i.StdSchedulerFactory                : Quartz scheduler version: 2.3.1
+2019-11-15 16:02:01.471  INFO 7747 --- [main] o.q.c.QuartzScheduler                    : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@79445efb
+2019-11-15 16:02:01.812  INFO 7747 --- [main] o.s.s.q.SchedulerFactoryBean             : Starting Quartz Scheduler now
+2019-11-15 16:02:01.813  INFO 7747 --- [main] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019-11-15 16:02:01.834  INFO 7747 --- [main] c.s.t.ApplicationTests                   : Started ApplicationTests in 7.449 seconds (JVM running for 15.113)
+2019-11-15 16:02:02.732  INFO 7747 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 16:02:02.736  INFO 7747 --- [Thread-2] o.s.s.q.SchedulerFactoryBean             : Shutting down Quartz Scheduler
+2019-11-15 16:02:02.737  INFO 7747 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019-11-15 16:02:02.737  INFO 7747 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019-11-15 16:02:02.738  INFO 7747 --- [Thread-2] o.q.c.QuartzScheduler                    : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019-11-15 16:02:02.739  INFO 7747 --- [Thread-2] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
